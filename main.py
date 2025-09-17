@@ -1,3 +1,17 @@
-import pygame
+import pygame, sys
+pygame.init()
 
-size = (800, 600)
+#Tamano de la pantalla
+size = (900,700)
+#crear ventana
+screen = pygame.display.set_mode(size)
+#titulo
+pygame.display.set_caption("Think Fast")
+
+
+#bucle de ejecucion
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+    pygame.display.update()
