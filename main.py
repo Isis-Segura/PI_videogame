@@ -17,4 +17,3 @@ while True:
     pygame.display.update()
 
 
-    hola
